@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catch the Star</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <section class="panel intro">
+      <p class="eyebrow">Mini Game</p>
+      <h1>Catch the Star</h1>
+      <p class="description">
+        Tangkap bintang secepat mungkin, naikkan combo, dan pertahankan skor terbaikmu.
+        Setiap level membuat bintang lebih cepat dan menantang.
+      </p>
+
+      <div class="stats">
+        <div>
+          <span class="label">Skor</span>
+          <strong id="score">0</strong>
+        </div>
+        <div>
+          <span class="label">Waktu</span>
+          <strong id="timer">20</strong>
+        </div>
+      </div>
+
+      <div class="progress-track">
+        <div id="progressBar" class="progress-bar"></div>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <span class="label">Level</span>
+          <strong id="level">1</strong>
+        </div>
+        <div class="feature-card">
+          <span class="label">Combo</span>
+          <strong id="combo">0x</strong>
+        </div>
+        <div class="feature-card">
+          <span class="label">Best</span>
+          <strong id="bestScore">0</strong>
+        </div>
+        <div class="feature-card">
+          <span class="label">Miss</span>
+          <strong id="misses">0</strong>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="startBtn" class="primary-btn">Mulai Game</button>
+        <button id="resetBtn" class="secondary-btn">Ulangi</button>
+        <button id="soundBtn" class="secondary-btn">🔊 Suara: ON</button>
+      </div>
+
+      <div class="tip-box">
+        <p id="tipText">Tip: raih combo 5 untuk menaikkan level lebih cepat.</p>
+      </div>
+
+      <p id="status" class="status">Klik mulai untuk bermain.</p>
+    </section>
+
+    <section class="panel arena-panel">
+      <div id="arena" class="arena">
+        <div class="arena-overlay" id="arenaOverlay">
+          <div>
+            <p>Siap?</p>
+            <small>Tangkap bintang sebanyak mungkin!</small>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
